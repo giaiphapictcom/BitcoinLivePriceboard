@@ -1,0 +1,36 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_padding">16dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="ListViewTextSize">13dip</dimen>
+
+    <dimen name="Dashboard.ColWidth">150dip</dimen>
+    <item name="Dashboard.MarketWeight" type="dimen" format="float">0.25</item>
+    <item name="Dashboard.VolumeWeight" type="dimen" format="float">0.25</item>
+    <item name="Dashboard.CirculatingWeight" type="dimen" format="float">0.25</item>
+
+
+     <dimen name="Dashboard.MaxSupply">150dip</dimen>
+
+    <dimen name="Market.number">20dip</dimen>
+    <dimen name="Market.Source">110dip</dimen>
+    <dimen name="Market.Pair">110dip</dimen>
+    <dimen name="Market.Volume24">120dip</dimen>
+    <dimen name="Market.Price">80dip</dimen>
+    <dimen name="Market.VolumeChange">90dip</dimen>
+    <dimen name="Market.UpdateStatus">90dip</dimen>
+
+    <dimen name="History.Date">70dip</dimen>
+    <dimen name="History.Low">70dip</dimen>
+    <dimen name="History.High">70dip</dimen>
+    <dimen name="History.Open">70dip</dimen>
+    <dimen name="History.Close">70dip</dimen>
+    <dimen name="History.Volume">120dip</dimen>
+    <dimen name="History.MarketCap">120dip</dimen>
+
+
+
+</resources>

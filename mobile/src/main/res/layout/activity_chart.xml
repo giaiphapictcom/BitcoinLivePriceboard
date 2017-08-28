@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.giaiphapict.bitcoinlivepriceboard.ChartActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/LinearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="top|center_horizontal"
+        android:gravity="center_horizontal"
+        tools:context=".DashboardActivity"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:gravity="bottom"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textSize="25sp"
+                android:id="@+id/CurrencyTitle"
+                android:text="Bitcoin Charts"
+                android:paddingBottom="8dp"
+
+                />
+            <include android:id="@+id/header" layout="@layout/buttons_change_activity" />
+        </LinearLayout >
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

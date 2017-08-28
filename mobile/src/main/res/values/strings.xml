@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Bitcoin Live Priceboard</string>
+    <string name="intro">This sample illustrates the use of a <b>TextSwitcher</b> to display text.
+\n\n<b>Click the button</b> below to set new text in the TextSwitcher and observe the in and out
+ fade animations.</string>
+    <string name="next">Next</string>
+
+    <string name="CurrencyValue"><b>$3,391.68</b> (-1.57%)</string>
+    <string name="CurrencyRate">1.00 BTC (0.00%)</string>
+    <string name="title_activity_history">History</string>
+    <string name="title_activity_market">Markets</string>
+    <string name="title_activity_chart">Bitcoin Live Priceboard - Charts</string>
+    <string name="api_url_main">https://api.coinmarketcap.com/v1</string>
+    <string name="api_currency">USD</string>
+
+</resources>

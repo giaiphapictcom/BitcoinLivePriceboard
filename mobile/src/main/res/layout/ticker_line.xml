@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:gravity="left|center"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/MarketCap"
+            android:layout_width="@dimen/Dashboard.ColWidth"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/ListViewTextSize"
+            android:textColor="#333333"
+            />
+
+
+        <TextView
+            android:id="@+id/Volume24h"
+            android:layout_width="@dimen/Dashboard.ColWidth"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/ListViewTextSize"
+            android:textColor="#333333"
+            />
+
+        <TextView
+            android:id="@+id/CirculatingSupply"
+            android:layout_width="@dimen/Dashboard.ColWidth"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/ListViewTextSize"
+            android:textColor="#333333"
+            />
+
+        <TextView
+            android:id="@+id/MaxSupply"
+            android:layout_width="@dimen/Dashboard.ColWidth"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/ListViewTextSize"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/MarketCapBTC"
+            android:layout_width="@dimen/Dashboard.ColWidth"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/ListViewTextSize"
+            android:textColor="#808080"
+        />
+        <TextView
+            android:id="@+id/Volume24hBTC"
+            android:layout_width="@dimen/Dashboard.ColWidth"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/ListViewTextSize"
+            android:textColor="#808080"
+        />
+    </LinearLayout>
+
+
+</LinearLayout>
+

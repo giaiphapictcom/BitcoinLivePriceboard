@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_padding"
+    android:paddingRight="@dimen/activity_padding"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.giaiphapict.bitcoinlivepriceboard.DashboardActivity"
+>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/MainLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="top|center_horizontal"
+        android:gravity="center_horizontal"
+        tools:context=".DashboardActivity"
+    >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:gravity="bottom"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textSize="25sp"
+                android:id="@+id/CurrencyValue"
+                android:text="@string/CurrencyValue"
+                android:paddingBottom="8dp"
+
+                />
+            <include android:id="@+id/header" layout="@layout/buttons_change_activity" />
+
+
+        </LinearLayout >
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:padding="1dp"
+                android:id="@+id/CurrencyRate"
+                android:text="@string/CurrencyRate"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/LinearMessage"
+            android:visibility="gone"
+            android:gravity="center"
+        >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="1dp"
+                android:id="@+id/networkMessage"
+                android:background="#FF0000"
+                android:textColor="#FFF"
+                android:text="You are NOT conncted"
+            />
+        </LinearLayout>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="12dp"
+            >
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:layout_marginBottom="6dp"
+                android:layout_weight="0"
+                android:background="#FF909090" />
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+            >
+                <TextView android:id="@+id/MarketCap"
+                    android:textSize="14dip"
+                    android:gravity="center_vertical|left"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:typeface="serif"
+                    android:layout_width="@dimen/Dashboard.ColWidth"
+                    android:text="Market Cap">
+                </TextView>
+                <TextView android:id="@+id/Volume24h"
+                    android:textSize="14dip"
+                    android:gravity="center_vertical|left"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:typeface="serif"
+                    android:layout_width="@dimen/Dashboard.ColWidth"
+                    android:layout_toRightOf="@+id/MarketCap"
+                    android:text="Volume (24h)">
+                </TextView>
+                <TextView android:id="@+id/CirculatingSupply"
+                    android:textSize="14dip"
+                    android:gravity="center_vertical|left"
+                    android:textStyle="bold"
+                    android:typeface="serif"
+                    android:layout_height="wrap_content"
+                    android:layout_width="@dimen/Dashboard.ColWidth"
+                    android:layout_toRightOf="@+id/Volume24h"
+                    android:text="Circulating Supply">
+                </TextView>
+                <TextView android:id="@+id/MaxSupply"
+                    android:textSize="14dip"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical|left"
+                    android:typeface="serif"
+                    android:layout_width="@dimen/Dashboard.ColWidth"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/CirculatingSupply"
+                    android:text="Max Supply">
+                </TextView>
+
+            </RelativeLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:layout_marginTop="6dp"
+                android:layout_weight="0"
+                android:background="#FF909090" />
+            <ListView
+                android:id="@+id/Tickets"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:cacheColorHint="#00000000">
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

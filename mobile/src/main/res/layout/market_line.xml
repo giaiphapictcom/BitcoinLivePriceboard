@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:gravity="left|center"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    >
+    <TextView
+        android:id="@+id/Number"
+        android:layout_width="@dimen/Market.number"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/ListViewTextSize"
+        android:textColor="#333333"
+        />
+    <TextView
+        android:id="@+id/Source"
+        android:layout_width="@dimen/Market.Source"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/ListViewTextSize"
+        android:textColor="#428bca"
+        />
+
+    <TextView
+        android:id="@+id/Pair"
+        android:layout_width="@dimen/Market.Pair"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/ListViewTextSize"
+        android:textColor="#428bca"
+        />
+
+    <TextView
+        android:id="@+id/Volume24"
+        android:layout_width="@dimen/Market.Volume24"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/ListViewTextSize"
+        android:textColor="#333333"
+        />
+
+    <TextView
+        android:id="@+id/Price"
+        android:layout_width="@dimen/Market.Price"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/ListViewTextSize"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        />
+    <TextView
+        android:id="@+id/VolumeChange"
+        android:layout_width="@dimen/Market.VolumeChange"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/ListViewTextSize"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        />
+    <TextView
+        android:id="@+id/UpdateStatus"
+        android:layout_width="@dimen/Market.UpdateStatus"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/ListViewTextSize"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        />
+
+</LinearLayout>
+
