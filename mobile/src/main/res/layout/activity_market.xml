@@ -11,7 +11,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:gravity="center"
     android:screenOrientation="landscape"
-    tools:context="com.giaiphapict.bitcoinlivepriceboard.MarketActivity"
+    tools:context="com.giaiphapict.activity.MarketActivity"
 
 >
     <LinearLayout
@@ -49,7 +49,12 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             >
-
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:layout_marginBottom="6dp"
+                android:layout_weight="0"
+                android:background="#FF909090" />
             <RelativeLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -76,7 +81,6 @@
                 <TextView android:id="@+id/Pair"
                     android:textSize="14dip"
                     android:gravity="center_vertical|left"
-
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
                     android:typeface="serif"
@@ -86,8 +90,7 @@
                 </TextView>
                 <TextView android:id="@+id/Volume24"
                     android:textSize="14dip"
-                    android:gravity="center_vertical|left"
-
+                    android:gravity="center_vertical|right"
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
                     android:typeface="serif"
@@ -97,8 +100,7 @@
                 </TextView>
                 <TextView android:id="@+id/Price"
                     android:textSize="14dip"
-                    android:gravity="center_vertical|left"
-
+                    android:gravity="center_vertical|right"
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
                     android:typeface="serif"
@@ -108,8 +110,7 @@
                 </TextView>
                 <TextView android:id="@+id/VolumeChange"
                     android:textSize="14dip"
-                    android:gravity="center_vertical|left"
-
+                    android:gravity="center_vertical|right"
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
                     android:typeface="serif"
@@ -119,7 +120,7 @@
                 </TextView>
                 <TextView android:id="@+id/UpdateStatus"
                     android:textSize="14dip"
-                    android:gravity="center_vertical|left"
+                    android:gravity="center_vertical|center"
 
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
@@ -129,12 +130,28 @@
                     android:text="Update">
                 </TextView>
             </RelativeLayout>
-            <ListView
-                android:id="@+id/Markets"
-                android:layout_height="wrap_content"
+            <View
                 android:layout_width="fill_parent"
-                android:cacheColorHint="#00000000">
-            </ListView>
+                android:layout_height="2dip"
+                android:layout_marginTop="6dp"
+                android:layout_weight="0"
+                android:background="#FF909090" />
+            <android.support.v4.widget.SwipeRefreshLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/swipe_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ListView
+                    android:id="@+id/Markets"
+                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent"
+                    android:cacheColorHint="#00000000">
+                </ListView>
+
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+
         </LinearLayout>
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

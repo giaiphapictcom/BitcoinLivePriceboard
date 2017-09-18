@@ -13,4 +13,15 @@
     <string name="api_url_main">https://api.coinmarketcap.com/v1</string>
     <string name="api_currency">USD</string>
 
+    <string name="fa_icon_bar_chart" translatable="false">&#xf080;</string>
+    <string name="fa_icon_pie_chart" translatable="false">&#xf200;</string>
+    <string name="fa_icon_database" translatable="false">&#xf1c0;</string>
+    <string name="fa_icon_btc" translatable="false">&#xf15a;</string>
+
+
+
+    <string name="fa_icon_areachart">&#xf1fe;</string>
+    <string name="fa_icon_piechart">&#xf200;</string>
+    <string name="fa_icon_linechart">&#xf201;</string>
+
 </resources>

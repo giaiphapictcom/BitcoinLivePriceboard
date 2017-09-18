@@ -24,7 +24,7 @@ import com.giaiphapict.commons.api;
 import com.giaiphapict.commons.constant;
 import com.giaiphapict.commons.MoneyFormat;
 import com.giaiphapict.model.Ticker;
-import com.giaiphapict.bitcoinlivepriceboard.R;
+import com.giaiphapict.activity.R;
 
 
 public class TickerAsyncTask extends GetAsyncTask {
@@ -124,20 +124,23 @@ public class TickerAsyncTask extends GetAsyncTask {
     }
 
     private void UpdateMain(){
-        SpannableString PriceUSDSpan = new SpannableString(MoneyFormat.NoDecimal(Double.parseDouble(price_usd),constant.usd_symbol));
-        SpannableString PercentChangeSpan = new SpannableString("");
-        if( percent_change_24h.length() > 0 ){
-            int percent_change_color = Color.GREEN;
+        SpannableString PriceUSDSpan = new SpannableString( MoneyFormat.Decimal(Double.parseDouble(price_usd),constant.usd_symbol) );
+        TextView CurrencyTxt= this.context.findViewById(R.id.CurrencyValue);
 
+
+        SpannableString PercentChangeSpan = new SpannableString("");
+        int percent_change_color = Color.GREEN;
+        if( percent_change_24h.length() > 0 ){
             if( percent_change_24h.substring(0, 1).equals("-")){
+                //percent_change_color = Color.parseColor("#d14836");
                 percent_change_color = Color.RED;
             }
             percent_change_24h = "("+percent_change_24h+"%)";
             PercentChangeSpan = new SpannableString(percent_change_24h);
-            PercentChangeSpan.setSpan(new ForegroundColorSpan(percent_change_color), 0, percent_change_24h.length(), 0);
         }
-        TextView CurrencyTxt= this.context.findViewById(R.id.CurrencyValue);
+        PercentChangeSpan.setSpan(new ForegroundColorSpan(percent_change_color), 0, percent_change_24h.length(), 0);
         CurrencyTxt.setText(TextUtils.concat(PriceUSDSpan," " ,PercentChangeSpan));
+
 
     }
 }

@@ -1,6 +1,6 @@
 package com.giaiphapict.asynctask;
 
-import com.giaiphapict.bitcoinlivepriceboard.R;
+import com.giaiphapict.activity.R;
 import com.giaiphapict.commons.MoneyFormat;
 import com.giaiphapict.commons.api;
 import com.giaiphapict.commons.constant;
@@ -39,15 +39,15 @@ public class HistoryAsyncTask extends GetAsyncTask {
 
 
                     Double open = Double.parseDouble(jsonObject.getString("open"));
-                    item.put("Open", MoneyFormat.NoDecimal(open,""));
+                    item.put("Open", MoneyFormat.Decimal(open,""));
 
                     Double high = Double.parseDouble(jsonObject.getString("high"));
-                    item.put("High", MoneyFormat.NoDecimal(high,""));
+                    item.put("High", MoneyFormat.Decimal(high,""));
                     Double low = Double.parseDouble(jsonObject.getString("low"));
-                    item.put("Low", MoneyFormat.NoDecimal(high,""));
+                    item.put("Low", MoneyFormat.Decimal(high,""));
 
                     Double close = Double.parseDouble(jsonObject.getString("close"));
-                    item.put("Close", MoneyFormat.NoDecimal(close,""));
+                    item.put("Close", MoneyFormat.Decimal(close,""));
 
                     Double volume = Double.parseDouble(jsonObject.getString("volume"));
                     item.put("Volume", MoneyFormat.NoDecimal(volume,""));

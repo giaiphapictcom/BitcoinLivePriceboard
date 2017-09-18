@@ -1,4 +1,4 @@
-package com.giaiphapict.bitcoinlivepriceboard;
+package com.giaiphapict.activity;
 
 /**
  * Created by QuanICT on 8/19/2017.

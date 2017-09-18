@@ -1,4 +1,4 @@
-package com.giaiphapict.bitcoinlivepriceboard;
+package com.giaiphapict.activity;
 
 import org.junit.Test;
 

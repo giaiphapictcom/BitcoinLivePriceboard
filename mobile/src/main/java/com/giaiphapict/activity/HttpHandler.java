@@ -1,4 +1,4 @@
-package com.giaiphapict.bitcoinlivepriceboard;
+package com.giaiphapict.activity;
 import android.util.Log;
 
 import java.io.BufferedInputStream;

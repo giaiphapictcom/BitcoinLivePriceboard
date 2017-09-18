@@ -18,7 +18,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="right"
         android:onClick="ViewChart"
-        android:text="Charts"
+        android:text="Chart"
+
         />
     <Button
         android:id="@+id/btnMarket"

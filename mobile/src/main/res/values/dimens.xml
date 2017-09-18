@@ -15,19 +15,19 @@
 
      <dimen name="Dashboard.MaxSupply">150dip</dimen>
 
-    <dimen name="Market.number">20dip</dimen>
+    <dimen name="Market.number">25dip</dimen>
     <dimen name="Market.Source">110dip</dimen>
-    <dimen name="Market.Pair">110dip</dimen>
+    <dimen name="Market.Pair">90dip</dimen>
     <dimen name="Market.Volume24">120dip</dimen>
     <dimen name="Market.Price">80dip</dimen>
     <dimen name="Market.VolumeChange">90dip</dimen>
-    <dimen name="Market.UpdateStatus">90dip</dimen>
+    <dimen name="Market.UpdateStatus">100dip</dimen>
 
     <dimen name="History.Date">70dip</dimen>
-    <dimen name="History.Low">70dip</dimen>
-    <dimen name="History.High">70dip</dimen>
-    <dimen name="History.Open">70dip</dimen>
-    <dimen name="History.Close">70dip</dimen>
+    <dimen name="History.Low">74dip</dimen>
+    <dimen name="History.High">74dip</dimen>
+    <dimen name="History.Open">74dip</dimen>
+    <dimen name="History.Close">74dip</dimen>
     <dimen name="History.Volume">120dip</dimen>
     <dimen name="History.MarketCap">120dip</dimen>
 

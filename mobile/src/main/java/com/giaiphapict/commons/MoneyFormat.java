@@ -8,7 +8,20 @@ public class MoneyFormat {
 
         String money = formattedPrice.format(number);
         money = money.replace(".", ",");
-        switch (currency_code){
+        return Symbol(money,currency_code);
+    }
+
+    public static String Decimal(Double number, String currency_code){
+        DecimalFormat formattedPrice = new DecimalFormat("###,###.##");
+
+        String money = formattedPrice.format(number);
+        money = money.replace(".", " ");
+        money = money.replace(",", ".");
+        return Symbol(money,currency_code);
+    }
+
+    public static String Symbol(String money,String code){
+        switch (code){
             case "$" :
                 money = "$ " + money;
                 break;

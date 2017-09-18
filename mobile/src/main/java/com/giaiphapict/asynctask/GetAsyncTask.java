@@ -4,23 +4,23 @@ import android.app.Activity;
 import android.app.ProgressDialog;
 import android.os.AsyncTask;
 
-import com.giaiphapict.bitcoinlivepriceboard.DashboardActivity;
 import com.giaiphapict.commons.api;
-/**
- * Created by QuanICT on 8/26/2017.
- */
+import android.widget.ListView;
+
 
 abstract class GetAsyncTask extends AsyncTask<String, Void, String> {
     private String url;
     public String TAG;
     public Activity context;
     public ProgressDialog pDialog;
-
+    public int pageLimit = 30;
+    public ListView ListView;
 
 
     public GetAsyncTask(Activity ctx, String url){
         this.context = ctx;
         this.url = url;
+
         this.TAG = this.context.getClass().getSimpleName();
     }
     @Override
