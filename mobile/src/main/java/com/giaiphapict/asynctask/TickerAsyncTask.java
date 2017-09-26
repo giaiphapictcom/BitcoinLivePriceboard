@@ -54,7 +54,7 @@ public class TickerAsyncTask extends GetAsyncTask {
                             jsonObject.getString("24h_volume_usd"),
                             jsonObject.getString("market_cap_usd"),
                             jsonObject.getString("available_supply"),
-                            jsonObject.getString("total_supply"),
+                            jsonObject.getString("max_supply"),
                             jsonObject.getString("percent_change_1h"),
                             jsonObject.getString("percent_change_24h"),
                             jsonObject.getString("percent_change_7d"),
@@ -64,10 +64,10 @@ public class TickerAsyncTask extends GetAsyncTask {
 
                     HashMap<String, String> item = new HashMap<>();
 
-                    item.put("market_cap", MoneyFormat.NoDecimal(ticker.market_cap_usd,constant.usd_symbol) );
+                    item.put("market_cap", MoneyFormat.Decimal(ticker.market_cap_usd,constant.usd_symbol) );
                     item.put("24h_volume", MoneyFormat.NoDecimal(ticker.volume_24h_usd,constant.usd_symbol));
                     item.put("available_supply", MoneyFormat.NoDecimal(ticker.available_supply,constant.bitcoin_symbol));
-                    item.put("max_supply", MoneyFormat.NoDecimal(ticker.available_supply,constant.bitcoin_symbol)  );
+                    item.put("max_supply", MoneyFormat.NoDecimal(ticker.total_supply,constant.bitcoin_symbol));
 
                     tickers.add(item);
 
@@ -115,8 +115,8 @@ public class TickerAsyncTask extends GetAsyncTask {
 
             ListAdapter adapter = new SimpleAdapter(
                     this.context, tickers, R.layout.ticker_line,
-                    new String[]{"market_cap","available_supply", "24h_volume","available_supply"},
-                    new int[]{R.id.MarketCap,R.id.MarketCapBTC, R.id.Volume24h, R.id.CirculatingSupply});
+                    new String[]{"market_cap","available_supply", "24h_volume","available_supply","max_supply"},
+                    new int[]{R.id.MarketCap,R.id.MarketCapBTC, R.id.Volume24h, R.id.CirculatingSupply, R.id.MaxSupply});
 
             TicketListView.setAdapter(adapter);
             UpdateMain();
