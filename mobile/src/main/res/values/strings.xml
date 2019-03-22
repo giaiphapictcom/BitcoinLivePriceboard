@@ -18,8 +18,6 @@
     <string name="fa_icon_database" translatable="false">&#xf1c0;</string>
     <string name="fa_icon_btc" translatable="false">&#xf15a;</string>
 
-
-
     <string name="fa_icon_areachart">&#xf1fe;</string>
     <string name="fa_icon_piechart">&#xf200;</string>
     <string name="fa_icon_linechart">&#xf201;</string>
